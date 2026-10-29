@@ -1,0 +1,75 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 32px 72px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.5px;
+}
+
+.student-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  padding: 8px 20px;
+  border-radius: 9999px;
+  margin-top: 14px;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.student-badge strong {
+  color: #2563eb;
+}
+
+.badge-divider {
+  color: #94a3b8;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+/* Laptop / desktop view: cards flow across the screen in a multi-column grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .page {
+    padding: 36px 20px 48px;
+  }
+
+  .title {
+    font-size: 1.9rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
